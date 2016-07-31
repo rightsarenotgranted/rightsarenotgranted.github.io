@@ -28,7 +28,7 @@
             <cite>–U.S. Declaration of Independence [emphasis added]</cite>
           </blockquote>
           <blockquote>
-            <p>"Rightful liberty is unobstructed action according to our will, within limits drawn around us by the equal rights of others. I do not add 'within the limits of the law,' because law is often but the tyrant's will, and always so when it violates the right of an individual."</p>
+            <p>"Rightful liberty is unobstructed action according to our will within limits drawn around us by the equal rights of others. I do not add “within the limits of the law” because law is often but the tyrant's will, and always so when it violates the rights of the individual."</p>
             <cite>–Thomas Jefferson</cite>
           </blockquote>
           <p>Rights are not granted. Rights are not based on laws. Rights are inherent, meaning they exist within us, and cannot be taken away. We are born with them, and we will die with them. The extent of your own rights is only bound by the rights of another. If an action does not bring harm to, and does not involve the property of another being, then it is within your rights to take that action.</p>
@@ -105,7 +105,7 @@
             <cite>–Second Amendment (U.S. Constitution)</cite>
           </blockquote>
           <blockquote>
-            <p>"Guard with jealous attention the public liberty. Suspect everyone who approaches that jewel. Unfortunately, nothing will preserve it but downright force. Whenever you give up that force, you are inevitably ruined."</p>
+            <p>"Guard with jealous attention the public liberty. Suspect every one who approaches that jewel. Unfortunately, nothing will preserve it but downright force. Whenever you give up that force, you are inevitably ruined."</p>
             <cite>–Patrick Henry</cite>
           </blockquote>
           <p>The Second Amendment, along with the other Amendments included in the Bill of Rights, do not grant rights. The Bill of Rights was put into place to explicitly restrict the government from infringing on people's inherent rights. It can be seen clearly in the language with phrases such as:</p>
@@ -198,6 +198,7 @@
       $(".title a").click(function(e) {
         e.preventDefault();
         var link = $(e.currentTarget);
+        link.blur();
         var topic = link.closest(".topic");
         topic.toggleClass("open");
         if (topic.hasClass("open")) {
